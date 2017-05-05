@@ -1,24 +1,37 @@
 <html>
 
 <head>
+	<style>
+		.darkSwitch {
+			background-color: #000000;
+		}
+
+		.lightSwitch {
+			background-color: #ffffff;
+		}
+	</style>
+	<!-- <link href="./bootstrap-switch.css" rel="stylesheet"> -->
 	<script src="./jquery-3.1.0.min.js"></script>
+	<!-- <script src="./bootstrap-switch.js"></script> -->
 	<script src="./stock.js"></script>
 	<script>
 		var CONFIG = {
 			logEnable: true,
-			stockList: [110000, , 700, 13905, , 5, 15144, , 1919, , 3333, , 1, , 388, 27052, , 3988], // empty is separator
+			stockList: [110000, , 110010, , 700, 13905, , 5, 15144, , 1919, , 3333, , 1, , 388, 27052, , 3988], // empty is separator
 			reloadIntervalInSecond: 3,
 			separatorColor: '#0099ff',
 			randomRefresh: true,
 			imgWidth: 450,
-			imgHeight: 200
+			imgHeight: 200,
+			nightMode: false
 		}
 	</script>
 </head>
 
-<body>
+<body class="default">
 	<table id="stockList">
 		<tbody>
+			<!-- Night Mode <input type="checkbox" name="nightMode"> -->
 		</tbody>
 	</table>
 </body>
