@@ -10,4 +10,3 @@ Just download 3 files and open in local browser, that's it!
 # Screen shot 
 ![Screen shot](https://github.com/kooison/hongkongstockcharts/blob/master/screenshot.png "Screen shot")
 
-![Screen shot](screenshot.png "Screen shot")
