@@ -5,7 +5,7 @@ If you want to monitor your portfolios in office but don't want to open aastocks
 - Auto refresh charts
 - Portable
 
-Just download 3 files and open in local browser, that's it!
+Just download few files and open in local browser, that's it!
 
 # Screen shot 
 Night Mode Off
