@@ -89,7 +89,7 @@ $(document).ready(function () {
 	}
 	console.log(scheme);
 
-	$.each(CONFIG.stockList, function (row, stockNum) {
+	$.each(WATCH_LIST, function (row, stockNum) {
 		$('#stockList > tbody:last-child').append(createCharts(row, stockNum, scheme));
 	});
 
