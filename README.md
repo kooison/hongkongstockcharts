@@ -15,4 +15,4 @@ Night Mode On
 ![Night Mode On](https://github.com/kooison/hongkongstockcharts/blob/master/night.png?raw=true "Night Mode On")
 
 # Sample
-[Link](https://kooison.github.io/hongkongstockcharts/stock.html)
+[Link](https://kooison.github.io/hongkongstockcharts/html/stock.html)
