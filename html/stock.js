@@ -51,7 +51,7 @@ var TEMPLATES = {
 
 var CHARTTYPES = {
 	// charts are ordered
-	three_month_with_sma:｛
+	three_month_with_sma: {
 		active: true,
 		url: "http://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=T&lang=1&titlestyle=1&vol=1&Indicator=1&indpara1=10&indpara2=20&indpara3=50&indpara4=100&indpara5=150&scheme={1}&com=100&stockid={0}.HK&period=7&type=1&indicator3=10&ind3para1=112.88&logoStyle=1&",
 	},
