@@ -53,19 +53,19 @@ var CHARTTYPES = {
 	// charts are ordered
 	three_month_with_sma: {
 		active: true,
-		url: "http://charts.aastocks.com/servlet/Charts?fontsize=12&15MinDelay=T&lang=1&titlestyle=1&vol=1&Indicator=2&indpara1=10&indpara2=20&indpara3=50&indpara4=0&indpara5=0&scheme={1}&com=100&stockid={0}.HK&period=7&type=1&logoStyle=1&",
+		url: "https://charts.aastocks.com/servlet/Charts?fontsize=12&15MinDelay=T&lang=1&titlestyle=1&vol=1&Indicator=2&indpara1=10&indpara2=20&indpara3=50&indpara4=0&indpara5=0&scheme={1}&com=100&stockid={0}.HK&period=7&type=1&logoStyle=1&",
 	},
 	three_month: {
 		active: false,
-		url: "http://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=T&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=7&type=1&logoStyle=1",
+		url: "https://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=T&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=7&type=1&logoStyle=1",
 	},
 	ten_day_per_one_hr: {
 		active: true,
-		url: "http://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=T&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=4&type=1&logoStyle=1",
+		url: "https://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=T&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=4&type=1&logoStyle=1",
 	},
 	one_day_per_one_min: {
 		active: true,
-		url: "http://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=F&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=5000&type=1&logoStyle=1",
+		url: "https://charts.aastocks.com/servlet/Charts?fontsize=11&15MinDelay=F&lang=1&titlestyle=1&vol=1&scheme={1}&com=100&stockid={0}.HK&period=5000&type=1&logoStyle=1",
 	}
 };
 
