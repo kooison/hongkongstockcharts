@@ -100,7 +100,7 @@ $(document).ready(function () {
 	setInterval(function () {
 		interval = getRandomInt(0, $('img').length);
 		$.each($('img'), function (index, value) {
-			if (!CONFIG.randomRefresh || index == interval) {;
+			if (!CONFIG.randomRefresh || index == interval) {
 				reload($(this).attr("id"));
 			}
 		});
