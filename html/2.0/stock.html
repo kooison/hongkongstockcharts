@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="../favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" href="../money-bag-icon-152-22860.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+	
+	<style>
+		.darkSwitch, .bg-black, .list-group-item-black {
+			background-color: #000000 !important;
+		}
+		.lightSwitch {
+			background-color: #ffffff;
+		}
+		.card-header {
+    		padding: .2rem 1.25rem;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="./watch-list.js"></script>
+	<script src="./stock.js"></script>
+
+	<script id="img" type="text/template">
+		<img id='stockImage_{{id}}' src='{{url}}' onclick="javascript:reload('stockImage_{{id}}')"/>
+	</script>
+	<script id="img_holder" type="text/template">
+		<div id="accordion" role="tablist">
+		{{#list}}
+		<div class="card h-100 w-95 m-2 text-white bg-dark">
+			<div class="card-header" role="tab" id="heading{{0.stockNum}}" data-toggle="collapse" data-target="#collapse{{0.stockNum}}" aria-expanded="true" aria-controls="collapse{{0.stockNum}}">
+				<h5 class="mb-0">
+					{{0.stockNum}}
+				</h5>
+			</div>
+			<div id="collapse{{0.stockNum}}" class="collapse show" role="tabpanel" aria-labelledby="heading{{0.stockNum}}">
+				<ul class="list-group list-group-flush">
+					{{#.}}
+					<li class="list-group-item list-group-item-black border-dark text-nowrap">
+						{{#imgs}}
+						{{{.}}}
+						{{/imgs}}
+					</li>
+					{{/.}}
+				</ul>
+			</div>
+		</div>
+		{{/list}}
+		</div>
+	</script>
+
+	<script>
+		var CONFIG = {
+			logEnable: true,
+			reloadIntervalInSecond: 3,
+			separatorColor: '#0099ff',
+			randomRefresh: true,
+			imgWidth: 450,
+			imgHeight: 200,
+			nightMode: true
+		}
+	</script>
+
+	<title>Stocks</title>
+</head>
+
+<body class="default">
+	<div id="card">
+	</div>
+	<a class="github-fork-ribbon left-bottom fixed" href="https://github.com/kooison/hongkongstockcharts" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>	
+</body>
+
+</html>
